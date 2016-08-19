@@ -63,7 +63,7 @@ input.slider-button{
 }
 
 .slider-button:checked + label{
-    border: 1px solid #000;
+    border: 1px solid rgba(50, 80, 200, 0.8);
 }
 
 .slider-button:nth-child(1):checked ~ div.slider-container{
@@ -86,7 +86,7 @@ input.slider-button{
 div.slider label{
 	position: absolute;
 	bottom: 20px;
-	border: 1px solid #fff;
+	border: 1px solid rgba(255, 255, 255, 0.8);
 	border-radius: 8px;
 	background: rgba(100,100,140, 0.5);
 	height: 16px;
@@ -105,5 +105,46 @@ div.slider label{
 }
 .slider label:nth-child(8){
     left: 120px;
+}
+
+
+@media (max-width: 500px){
+    
+    
+.slider label:nth-child(2){
+    left: 30px;
+}
+.slider label:nth-child(4){
+    left: 80px;
+}
+.slider label:nth-child(6){
+    left: 130px;
+}
+.slider label:nth-child(8){
+    left: 180px;
+}    
+    
+.slider-button:nth-child(1){
+    left: 30px;
+    
+}
+
+.slider-button:nth-child(3){
+    left: 80px;
+    
+}
+
+.slider-button:nth-child(5){
+    left: 130px;
+    
+}
+
+.slider-button:nth-child(7){
+    left: 180px;
+}
+    
+    
+    
+    
 }
 
